@@ -1,23 +1,26 @@
 import React from 'react';
 import Input from './Input';
 import Output from './Output';
+import { marked } from 'marked';
+import Interweave from 'interweave';
 
 export default class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			input: null,
+			parsedInput: null,
 		};
 	}
 
 	handleInput(newInput) {
-		this.setState({ input: newInput });
+		let parsedInput = <Interweave content={marked.parse(newInput)} />; //sanitize and parse text input to HTML markdown format
+		this.setState({ parsedInput: parsedInput });
 	}
 	render() {
 		return (
 			<div className="container mx-auto row">
 				<Input onType={this.handleInput.bind(this)} />
-				<Output value={this.state.input} />
+				<Output value={this.state.parsedInput} />
 			</div>
 		);
 	}
