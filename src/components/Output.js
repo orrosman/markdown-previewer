@@ -5,7 +5,7 @@ export default class Output extends React.Component {
 		return (
 			<div className="col m-4">
 				<h3 className="text-center ">Output:</h3>
-				<div className="form-control">{this.props.output}</div>
+				<div className="form-control">{this.props.value}</div>
 			</div>
 		);
 	}
