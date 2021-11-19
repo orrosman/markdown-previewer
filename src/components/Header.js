@@ -1,5 +1,5 @@
 import React from 'react';
-import exampleLogo from '../assets/logo.svg';
+import markdownLogo from '../assets/markdown.svg';
 
 export default class Header extends React.Component {
 	render() {
@@ -7,12 +7,12 @@ export default class Header extends React.Component {
 			<nav className="navbar navbar-dark bg-dark">
 				<i className="navbar-brand mx-auto text-center">
 					<img
-						src={exampleLogo}
+						src={markdownLogo}
 						width="100"
 						height="100"
 						alt="example logo"
 					></img>
-					<div>header text here</div>
+					<div>Online Markdown Editor</div>
 				</i>
 			</nav>
 		);
