@@ -27,5 +27,8 @@ Basic Todo list to track progress
   - [✔] App -> Output
 
 - [✔] Convert simple text to HTML markdown format
+
   - [✔] Sanitize input (to prevent XSS)
   - [✔] Parse input as HTML
+
+- [✔] Add a markdown reference sheet

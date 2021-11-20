@@ -1,15 +1,19 @@
 import React from 'react';
+import Help from './Help';
 
 export default class Input extends React.Component {
 	render() {
 		return (
-			<div className="col m-4">
-				<h3 className="text-center">Input:</h3>
+			<div className="col col-md-6">
+				<div className="d-flex">
+					<Help />
+					<h3 className="mx-auto">Input:</h3>
+				</div>
 				<textarea
-					className="form-control"
+					className="form-control h-100"
 					id="input-area"
-					rows="20"
-					defaultValue="Marked - Markdown Parser"
+					style={{ resize: 'none' }}
+					defaultValue="# Live Markdown Editor"
 					onChange={(e) => this.props.onType(e.target.value)}
 				></textarea>
 			</div>
