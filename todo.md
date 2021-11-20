@@ -4,7 +4,6 @@ Basic Todo list to track progress
 
 ### Todo
 
-- [ ] Add a quick copy button to output
 - [ ] Add a button to download output
   - [ ] As HTML format
   - [ ] As GitHub Flavored Markdown format
@@ -32,3 +31,4 @@ Basic Todo list to track progress
   - [✔] Parse input as HTML
 
 - [✔] Add a markdown reference sheet
+- [✔] Add a quick copy button to output

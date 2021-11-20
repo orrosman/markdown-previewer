@@ -18,7 +18,7 @@ export default class App extends React.Component {
 	}
 	render() {
 		return (
-			<div className="container mx-auto row">
+			<div className="container-fluid row h-100">
 				<Input onType={this.handleInput.bind(this)} />
 				<Output value={this.state.parsedInput} />
 			</div>
