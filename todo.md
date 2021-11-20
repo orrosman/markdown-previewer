@@ -4,9 +4,6 @@ Basic Todo list to track progress
 
 ### Todo
 
-- [ ] Add a button to download output
-  - [✔] As HTML format
-  - [ ] As GitHub Flavored Markdown format
 - [ ] Save documents to MongoDB
   - [ ] Add button to save
     - [ ] Option to give title
@@ -32,3 +29,6 @@ Basic Todo list to track progress
 
 - [✔] Add a markdown reference sheet
 - [✔] Add a quick copy button to output
+- [✔] Add a button to download output
+  - [✔] As HTML format
+  - [✔] As GitHub Flavored Markdown format

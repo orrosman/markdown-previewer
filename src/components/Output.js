@@ -1,4 +1,5 @@
 import React from 'react';
+import { marked } from 'marked';
 import { Button, Dropdown, DropdownButton } from 'react-bootstrap';
 import clipboard from '../assets/clipboard.svg';
 
@@ -12,6 +13,15 @@ export default class Output extends React.Component {
 		const file = new Blob([this.props.value.props.content], {
 			type: 'text/plain',
 		});
+		element.href = URL.createObjectURL(file);
+		element.download = 'html-file.html';
+		document.body.appendChild(element);
+		element.click();
+	}
+
+	downloadAsGFM() {
+		const element = document.createElement('a');
+		const file = new Blob([this.props.plainInput], { type: 'text/plain' });
 		element.href = URL.createObjectURL(file);
 		element.download = 'markdown-file.md';
 		document.body.appendChild(element);
@@ -39,7 +49,9 @@ export default class Output extends React.Component {
 						<Dropdown.Item as="button" onClick={() => this.downloadAsHTML()}>
 							HTML format
 						</Dropdown.Item>
-						<Dropdown.Item href="#/action-2">Github format</Dropdown.Item>
+						<Dropdown.Item as="button" onClick={() => this.downloadAsGFM()}>
+							Github format
+						</Dropdown.Item>
 					</DropdownButton>
 				</div>
 			</div>
