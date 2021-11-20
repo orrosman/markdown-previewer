@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/markdown-previewer/static/js/main.a5934571.chunk.js",
+    "main.js.map": "/markdown-previewer/static/js/main.a5934571.chunk.js.map",
+    "runtime-main.js": "/markdown-previewer/static/js/runtime-main.a7880254.js",
+    "runtime-main.js.map": "/markdown-previewer/static/js/runtime-main.a7880254.js.map",
+    "static/css/2.383c0125.chunk.css": "/markdown-previewer/static/css/2.383c0125.chunk.css",
+    "static/js/2.c04d3299.chunk.js": "/markdown-previewer/static/js/2.c04d3299.chunk.js",
+    "static/js/2.c04d3299.chunk.js.map": "/markdown-previewer/static/js/2.c04d3299.chunk.js.map",
+    "index.html": "/markdown-previewer/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/markdown-previewer/static/css/2.383c0125.chunk.css.map",
+    "static/js/2.c04d3299.chunk.js.LICENSE.txt": "/markdown-previewer/static/js/2.c04d3299.chunk.js.LICENSE.txt",
+    "static/media/clipboard.24234b14.svg": "/markdown-previewer/static/media/clipboard.24234b14.svg",
+    "static/media/github.82bea185.svg": "/markdown-previewer/static/media/github.82bea185.svg",
+    "static/media/info-circle.b8b4fd48.svg": "/markdown-previewer/static/media/info-circle.b8b4fd48.svg",
+    "static/media/linkedin.1ad1b099.svg": "/markdown-previewer/static/media/linkedin.1ad1b099.svg",
+    "static/media/markdown.685d93a3.svg": "/markdown-previewer/static/media/markdown.685d93a3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7880254.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.c04d3299.chunk.js",
+    "static/js/main.a5934571.chunk.js"
+  ]
+}
