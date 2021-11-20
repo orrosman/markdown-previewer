@@ -5,7 +5,7 @@ Basic Todo list to track progress
 ### Todo
 
 - [ ] Add a button to download output
-  - [ ] As HTML format
+  - [✔] As HTML format
   - [ ] As GitHub Flavored Markdown format
 - [ ] Save documents to MongoDB
   - [ ] Add button to save
