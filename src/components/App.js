@@ -14,13 +14,17 @@ export default class App extends React.Component {
 	}
 
 	handleInput(newInput) {
-		console.log(newInput);
 		let parsedInput = <Interweave content={marked.parse(newInput)} />; //sanitize and parse text input to HTML markdown format
 		this.setState({ plainInput: newInput, parsedInput: parsedInput });
 	}
 	render() {
 		return (
-			<div className="container-fluid row h-100">
+			<div
+				className="container-fluid row h-100"
+				style={{
+					maxHeight: '30rem',
+				}}
+			>
 				<Input onType={this.handleInput.bind(this)} />
 				<Output
 					value={this.state.parsedInput}

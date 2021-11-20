@@ -12,7 +12,11 @@ export default class Input extends React.Component {
 				<textarea
 					className="form-control h-100"
 					id="input-area"
-					style={{ resize: 'none' }}
+					style={{
+						resize: 'none',
+						overflow: 'auto',
+						maxHeight: '35rem',
+					}}
 					defaultValue="# Live Markdown Editor"
 					onChange={(e) => this.props.onType(e.target.value)}
 				></textarea>

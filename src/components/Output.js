@@ -31,7 +31,14 @@ export default class Output extends React.Component {
 		return (
 			<div className="col col-md-6">
 				<h3 className="text-center">Output:</h3>
-				<div className="form-control h-100 overflow-auto">
+				<div
+					className="form-control h-100 overflow-auto"
+					style={{
+						resize: 'none',
+						overflow: 'auto',
+						maxHeight: '35rem',
+					}}
+				>
 					<div>
 						<Button
 							className="position-absolute end-0 bg-transparent"
@@ -44,7 +51,7 @@ export default class Output extends React.Component {
 					</div>
 					{this.props.value}
 				</div>
-				<div className="d-flex justify-content-end mt-5">
+				<div className="d-flex justify-content-end mt-1">
 					<DropdownButton title="Download">
 						<Dropdown.Item as="button" onClick={() => this.downloadAsHTML()}>
 							HTML format
